@@ -1,0 +1,265 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+article{
+    position: relative;
+    width: 250px;
+    max-height: 400px;
+    transition:all .3s ease}
+
+.img-chooise-A:hover{
+    box-shadow: 0,0,0,0;
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+} 
+article img:last-child{
+    position: absolute;
+    width: 90%;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+transition: .3s ease;
+opacity: 0;;
+}
+
+article:hover{
+    transform: perspective(250px)
+    rotateX(10seg);
+}
+article::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom
+    ,transparent 10%,
+    rgba(0,0,0,0.5)50%,
+    rgba(0,0,0,0)95%,
+
+    );
+opacity: 0;
+transition: all .3s ease
+}
+
+article:hover::before{
+    opacity: 1;
+}
+article:hover img:last-child{
+    opacity:1;
+    transform: translateY(10%);
+}
+/* -----------------------------------------------------------
+---------------------------CHOOISE -----------------------------
+------------------------------------------------------------ */
+
+.chooise-h1{
+    background-color:  rgb(232, 94, 94);
+color: aliceblue;
+box-sizing: border-box;
+margin: 0;
+}
+
+.container-chooise{
+   
+    /* background-color: rgba(0, 0, 0, 0.952); */
+    background-image: url('../assets/image/fondo.png');
+    background-size: cover;
+    background-blend-mode:luminosity;
+
+}
+.chooise-option{
+    display: flex;
+    justify-content: center;
+}
+.div-option{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  width: 100%;
+    height: 100vh;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.div-sel{
+    height: 100vh;
+}
+.h1-select{
+    color: white;
+    text-align: center;
+}
+
+    
+.col-profesor{
+    
+}
+.img-selected{
+    min-width: 50%;
+    max-width: 50%;
+    padding: 2rem;
+    max-height: 800px;
+}
+
+.img-chooise-A{
+    height: 400px;
+width: 240px;
+/* box-shadow: 2px 20px  4.4em; */
+box-shadow: 8px 13px 41px -11px rgba(0,0,0,0.8);
+-webkit-box-shadow: 8px 13px 41px -11px rgba(0,0,0,0.8);
+-moz-box-shadow: 8px 13px 41px -11px rgba(0,0,0,0.8);
+}
+
+/* -----------------------------------------------------------
+---------------------------NAV-BAR -----------------------------
+------------------------------------------------------------ */
+
+.navbar{
+    background-color:  rgb(232, 94, 94);
+    
+    
+}
+.navbar a{color: aliceblue;}
+.nav-login{
+    justify-self: flex-end;
+}
+
+
+/* -----------------------------------------------------------
+---------------------------BODY -----------------------------
+------------------------------------------------------------ */
+body{
+    background-color: black;
+}
+.div-busqueda{
+    display: flex;
+    flex-direction: row;
+justify-content: end;
+justify-items: center;
+padding: 8px;
+}
+
+/* -----------------------------------------------------------
+---------------------------BODY -----------------------------
+------------------------------------------------------------ */
+.contenedor-principal{
+   
+    background-image: url('../assets/image/fondo.png');
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+
+    
+   
+}
+/* -----------------------------------------------------------
+---------------------------POKEMON-CARD -----------------------------
+------------------------------------------------------------ */
+.pokemon{
+    margin-top: 10px;
+    text-align: center;
+    background: transparent;
+    background: -webkit-linear-gradient(rgba(black,#00000000));   
+    min-height: 100%;
+    border-color:solid 2px  whitesmoke;
+    padding: 1px;
+   
+
+}
+.card-text{
+    font-size:.9rem;
+    text-align: justify;
+    padding: 0;
+   color: white;
+ min-height: 100%;
+}
+.card{
+    min-height:100%;
+    width: 16rem;
+    min-height:100%;
+    color: white;
+    background-color: transparent;
+}
+.card:hover{
+    box-shadow: 4px;
+    min-height:100%;
+    width: 16rem;
+    min-height:100%;
+    border: solid 1px grey;
+    color: white;
+    background-color: transparent;
+}
+.card-img-top {
+    
+    background-color: rgba(0, 0, 0, 0.523);
+ 
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    background: inherit;
+    padding: 0.5rem;
+    padding-top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.651);
+   
+}
+.boton-capturar{
+    width: 100%;
+    margin-bottom: 1px;
+}
+.btn-buscar{
+    width: 8rem;
+    background-color: rgb(235, 235, 235);
+    border: solid 1px rgb(255, 252, 253);
+    margin-left: 20px;
+}
+
+.div-mis-pokemon{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(10, 7, 7, 0.288);
+    background-image: url('../assets/image/pokebola.jpg');
+    background-size: cover;
+    background-blend-mode:luminosity;
+  
+    min-width: 100vh;
+    min-height: 100vh;
+}
+.div-pokemon{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    color: white;
+    font-size: 1rem;
+    text-decoration: solid;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px black;
+background: linear-gradient(rgba(5, 4, 4, 0.47),transparent);}
+.div-img-mp{
+    width: 100%;
+height: auto;
+
+}
+.div-boton-eliminar{
+
+    margin-right: 10px;
+}
+

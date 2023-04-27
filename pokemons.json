@@ -1,0 +1,100 @@
+[
+    {
+      "nombre": "Pikachu",
+      "descripcion": "Este Pokémon tiene bolsas en las mejillas que generan electricidad poderosa cuando se produce tensión. Tiene la capacidad de liberar cargas eléctricas con facilidad.",
+      "habilidad": "Electricidad estática",
+      "color": "Amarillo",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+    }, {
+      "nombre": "Squirtle",
+      "descripcion": "Squirtle es una pequeña tortuga con una concha que lo protege de los ataques enemigos. Puede disparar agua a alta velocidad y también puede nadar en agua con facilidad.",
+      "habilidad": "Torrente",
+      "color": "Azul",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+    },{
+      "nombre": "Charmander",
+      "descripcion": "Charmander es un Pokémon tipo fuego. Tiene una llama en su cola que le permite controlar el fuego. Es un Pokémon valiente y leal a su entrenador.",
+      "habilidad": "Mar llamas",
+      "color": "Naranja",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+      }, {
+        "nombre": "Bulbasaur",
+        "descripcion": "Bulbasaur es una criatura pequeña y adorable que tiene una planta en su espalda. La planta puede absorber los rayos del sol y convertirlos en energía para Bulbasaur.",
+        "habilidad": "Espesura",
+        "color": "Verde",
+        "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+      },
+    {
+      "nombre": "Charizard",
+      "descripcion": "Charizard es un feroz dragón volador que puede escupir fuego y tiene la capacidad de volar a altas velocidades. Es muy poderoso y un gran competidor en batallas de Pokémon.",
+      "habilidad": "Mar llamas",
+      "color": "Rojo",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+    },{
+      "nombre": "Tyranitar",
+      "descripcion": "Este Pokémon es conocido por su dureza y gran fuerza. Puede causar terremotos y maremotos con un solo golpe de su cola.",
+      "habilidad": "Corteza gruesa",
+      "color": "Verde oscuro",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png"
+      },
+   
+   
+    {
+      "nombre": "Jigglypuff",
+      "descripcion": "Jigglypuff es un Pokémon redondo y rosa que puede cantar una canción que hace dormir a cualquier persona o Pokémon que la escuche. Es muy amistoso y le encanta cantar.",
+      "habilidad": "Canto cura",
+      "color": "Rosado",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png"
+    },{
+      "nombre": "Espeon",
+      "descripcion": "Este Pokémon tiene un sexto sentido muy desarrollado y puede percibir pequeñas vibraciones en el aire. Su cola también puede liberar ondas de energía psíquica.",
+      "habilidad": "Sincronía",
+      "color": "Morado",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png"
+      },
+    {
+      "nombre": "Mewtwo",
+      "descripcion": "Mewtwo es un Pokémon legendario que fue creado artificialmente en un laboratorio. Es extremadamente poderoso y puede controlar las mentes de otros Pokémon y humanos.",
+      "habilidad": "Presión",
+      "color": "Morado",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"
+    },{
+      "nombre": "Blaziken",
+      "descripcion": "Este Pokémon es muy rápido y hábil en combate. Tiene la habilidad de generar fuego en sus piernas y puede saltar grandes distancias.",
+      "habilidad": "Impulso",
+      "color": "Rojo",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/257.png"
+      },{
+        "nombre": "Salamence",
+        "descripcion": "Este Pokémon es conocido por su gran velocidad y habilidades de vuelo. Puede generar vientos huracanados con el aleteo de sus alas.",
+        "habilidad": "Intimidación",
+        "color": "Azul oscuro",
+        "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/373.png"
+        },{
+          "nombre": "Gallade",
+          "descripcion": "Este Pokémon es muy hábil en combate y tiene una gran capacidad de concentración. Puede generar ondas de energía psíquica desde sus cuchillas.",
+          "habilidad": "Impasible",
+          "color": "Blanco",
+          "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png"
+          },{
+            "nombre": "Garchomp",
+            "descripcion": "Este Pokémon tiene una gran velocidad y fuerza física. Puede generar terremotos y ondas de choque con solo golpear el suelo con su cola.",
+            "habilidad": "Piel tosca",
+            "color": "Azul",
+            "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png"
+            },{
+              "nombre": "Aggron",
+              "descripcion": "Este Pokémon tiene una gran resistencia y defensa. Puede resistir los ataques más poderosos y puede causar grandes daños con sus ataques físicos.",
+              "habilidad": "Robustez",
+              "color": "Gris",
+              "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/306.png"
+              },
+    {
+      "nombre": "Eevee",
+      "descripcion": "Eevee es una criatura adorable que puede evolucionar en varios tipos diferentes de Pokémon, dependiendo de cómo se críe. Es muy adaptable y puede sobrevivir en cualquier entorno.",
+      "habilidad": "Adaptable",
+      "color": "Marrón",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"
+    },{    "nombre": "Gyarados",    "descripcion": "Gyarados es un Pokémon muy temido por su gran tamaño y fuerza. Tiene una habilidad natural para controlar el agua y causar grandes maremotos.",    "habilidad": "Intimidación",    "color": "Azul oscuro",    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png"  },  {    "nombre": "Snorlax",    "descripcion": "Snorlax es un Pokémon muy dormilón que come todo el tiempo. Es muy resistente y puede dormir durante días sin interrupción.",    "habilidad": "Inmunidad",    "color": "Azul claro",    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"  },  {    "nombre": "Dragonite",    "descripcion": "Dragonite es un Pokémon muy poderoso que puede volar a altas velocidades y controlar los elementos del aire y del agua. Es muy amigable y protector con los demás Pokémon.",    "habilidad": "Multitipo",    "color": "Naranja",    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"  },  {    "nombre": "Umbreon",    "descripcion": "Umbreon es un Pokémon de tipo siniestro y muy nocturno. Puede manipular las sombras y es muy sigiloso en la oscuridad.",    "habilidad": "Sincronía",    "color": "Negro",    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png"  },{    "nombre": "Lucario",    "descripcion": "Lucario es un Pokémon de tipo lucha y acero. Tiene una gran habilidad para sentir las auras y detectar las emociones de los demás.",    "habilidad": "Impasible",    "color": "Azul y negro",    "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png"  }]
+    
+    
