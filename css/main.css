@@ -1,10 +1,8 @@
 *{
-
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
-}
+    }
 
 article{
     position: relative;
@@ -26,8 +24,8 @@ article img:last-child{
     right: 0;
     margin: auto;
     transform: translateY(25%);
-transition: .3s ease;
-opacity: 0;;
+    transition: .3s ease;
+    opacity: 0;;
 }
 
 article:hover{
@@ -63,14 +61,14 @@ article:hover img:last-child{
 
 .chooise-h1{
     background-color:  rgb(232, 94, 94);
-color: aliceblue;
-box-sizing: border-box;
-margin: 0;
+    font-size: 1rem;
+    height: 9px;
+    color: aliceblue;
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.container-chooise{
-   
-    /* background-color: rgba(0, 0, 0, 0.952); */
+.container-chooise{    
     background-image: url('../assets/image/fondo.png');
     background-size: cover;
     background-blend-mode:luminosity;
@@ -79,6 +77,7 @@ margin: 0;
 .chooise-option{
     display: flex;
     justify-content: center;
+    width: 10rem;
 }
 .div-option{
     padding: 20px;
@@ -112,16 +111,67 @@ margin: 0;
 .img-chooise-A{
     height: 400px;
 width: 240px;
-/* box-shadow: 2px 20px  4.4em; */
 box-shadow: 8px 13px 41px -11px rgba(0,0,0,0.8);
 -webkit-box-shadow: 8px 13px 41px -11px rgba(0,0,0,0.8);
 -moz-box-shadow: 8px 13px 41px -11px rgba(0,0,0,0.8);
+}
+/* -----------------------------------------------------------
+---------------------------LOGIN -----------------------------
+------------------------------------------------------------ */
+.contenedor-login{
+    background-image: url('../assets/image/pokebola.jpg');
+    background-size:cover;
+    height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+
+}
+    
+.div-login{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: start;
+    margin-top: 30px;
+   width: 60%;
+   height: 70%;
+}
+.header-login{
+    color: whitesmoke;
+}
+.text-login{
+    color:white;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-evenly;
+align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.459);
+
+}
+.form-login{
+    text-align: center;
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    width: 70%;
+}
+.form-registrer{
+    text-align: center;
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    width: 70%;
 }
 
 /* -----------------------------------------------------------
 ---------------------------NAV-BAR -----------------------------
 ------------------------------------------------------------ */
-
 .navbar{
     background-color:  rgb(232, 94, 94);
     
@@ -200,7 +250,8 @@ padding: 8px;
     background-color: transparent;
 }
 .card-img-top {
-    
+    width: 100%;
+    height: 11rem;
     background-color: rgba(0, 0, 0, 0.523);
  
 }
@@ -263,3 +314,15 @@ height: auto;
     margin-right: 10px;
 }
 
+.mensaje-mp{
+    color: rgba(245, 245, 245, 0.904);
+    font-size: 2rem;
+}
+.mensaje-link{
+    color: rgb(51, 0, 255);
+}
+.span-link{
+    color: rgba(255, 255, 255, 0.836);
+
+}
+ 

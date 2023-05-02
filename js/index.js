@@ -1,16 +1,39 @@
-const formLogin = document.querySelector('.form-login')
 
-const userLs=localStorage.getItem('username')
-const passLs=localStorage.getItem('password')
-console.log(userLs);
-console.log(passLs);
-const hone=document.getElementById("h1-login")
-hone.innerText=`Bienvenido ${userLs}`;
-formLogin.addEventListener('click',(e)=>{
+const boton = document.querySelector('#boton-login')
+
+const user= localStorage.getItem('users')
+let users=JSON.parse(user)
+console.log(users)
+let userInput=document.getElementById('username').value;
+let passInput=document.getElementById('password').value;
+
+boton.addEventListener('click',(e)=>{
+
+
     e.preventDefault();
-    const userInput=document.getElementById('username').value;
-    const passInput=document.getElementById('password').value;
-if(userInput==userLs && passLs==passInput){hone.innerText="COINCIDE";
-window.location.href="/pages/mypokemons.html"}
+    userInput=document.getElementById('username').value;
+    passInput=document.getElementById('password').value;
+    console.log("SE EJECUTO","pass :" ,passInput);
+ 
 
+
+    users.forEach(u => {
+       
+    
+        let x=u.userName;
+        let xx=u.passWord;
+    
+        if(x===userInput && xx===passInput){
+            window.location.href="/pages/mypokemons.html";
+            console.log("SE PUEDE LOGEAR");
+        }else{
+            console.log("no se puede logear");
+        }
+    })
 })
+
+
+
+
+
+

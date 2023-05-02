@@ -1,29 +1,4 @@
 
-  //-----FORMULARIO DE REGISTRO
-//   const formRegistrer=document.querySelector('.form-registrer');
-//   const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
-  
-// console.log(localStorage.getItem('username'));
-//   formRegistrer.addEventListener('submit',()=>{
-//     const userInput=document.getElementById('username').value;
-//     const passInput=document.getElementById('password').value;
-//     const confirmPassInput=document.getElementById('confirm-password').value;
-      
-
-//       console.log("PROBANDO REGISTRO");
-//     if (passInput !== confirmPassInput) {
-//       alert('Error en inicio de sesion. El usuario y la contraseña no coinciden');
-//       return;
-//     }
- 
-//     localStorage.setItem('username', userInput);
-//     localStorage.setItem('password', passInput);
-//     alert('Bienvenido a Codermon');
-//     formRegistrer.reset();
-//   });
- 
-// const botones= document.querySelectorAll("boton-capturar")
-
   let listaPokemons=[];
   fetch('../pokemons.json')
         .then((pokemon)=>pokemon.json())
@@ -59,11 +34,15 @@
     botones.forEach(boton=>boton.addEventListener('click',capturarPokemon))
     }
 
-const pokemonesCapturados=JSON.parse(localStorage.getItem('mis-pokemones'));
+let pokemonesCapturados=JSON.parse(localStorage.getItem('mis-pokemones'));
+const misPokemon = JSON.parse(localStorage.getItem('mis-pokemones')) || [];
 let check={};
-    function capturarPokemon(e) {
+    
+function capturarPokemon(e) {
         const id = e.currentTarget.id;
+        let pAdd=[];
         let pokeAdd=listaPokemons.find(item=>item.nombre===id);
+        pAdd.push(pokeAdd)
        console.log("ID ",id);
        console.log("pokeAdd ",pokeAdd);
 
@@ -81,12 +60,28 @@ let check={};
 
      confirmar().then((resultado) => {
         if (resultado.isConfirmed) {
-          let check=pokemonesCapturados.find(item=>item.nombre===pokeAdd.nombre);
-            console.log("CHECK ",check);
+        
+            // console.log(pokeAdd);
+            // localStorage.setItem('mis-pokemones', JSON.stringify(pokeAdd))
           
-      
-          if (check) {        
-             console.log("El pokemon ya fue agregado ");
+   
+            console.log(typeof(pokemonesCapturados));
+
+            //  aca debo corregir-------------------------------
+            //  aca debo corregir-------------------------------
+            //  aca debo corregir-------------------------------
+            //  aca debo corregir-------------------------------
+            //  aca debo corregir-------------------------------
+            //  aca debo corregir-------------------------------
+            // pokemonesCapturados=JSON.parse(localStorage.getItem('mis-pokemones'));
+            pokemonesCapturados = JSON.parse(localStorage.getItem('mis-pokemones')) || [];
+
+            let check=pokemonesCapturados.find(item=>item.nombre===pokeAdd.nombre);
+            console.log("CHECK ",check);
+            
+            
+            if (check) {        
+              console.log("El pokemon ya fue agregado ");
              Swal.fire({
               icon: 'error',
               title: 'Oops...',
@@ -94,14 +89,15 @@ let check={};
               // footer: '<a href="">Why do I have this issue?</a>'
             })
           }else if (pokemonesCapturados.length>=5){
-        console.log("No puedes capturar mas pokemones , alcanzaste el maximo posible");
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
+            console.log("No puedes capturar mas pokemones , alcanzaste el maximo posible");
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
           text: 'No puedes capturar mas pokemones , alcanzaste el maximo posible!',
           // footer: '<a href="">Why do I have this issue?</a>'
         })
-      }else{
+      }
+      else{
        
         const Toast = Swal.mixin({
           toast: true,
@@ -121,11 +117,12 @@ let check={};
         });
         pokemonesCapturados.push(pokeAdd)
         localStorage.setItem('mis-pokemones', JSON.stringify(pokemonesCapturados))
-      }
+      };
       
-      } 
-      else if (resultado.isDenied) {
-        console.log('El usuario ha hecho clic en Cancelar');
+    }
+    
+    else if (resultado.isDenied) {
+      console.log('El usuario ha hecho clic en Cancelar');
         // Realizar la acción deseada cuando el usuario hace clic en Cancelar
       }
     });
