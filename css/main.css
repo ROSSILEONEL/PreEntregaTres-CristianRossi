@@ -1,3 +1,7 @@
+:root{
+    --color-primary:rgb(232, 94, 94);
+--color-secundary:rgb(224, 241, 255);
+}
 *{
     padding: 0;
     margin: 0;
@@ -60,10 +64,10 @@ article:hover img:last-child{
 ------------------------------------------------------------ */
 
 .chooise-h1{
-    background-color:  rgb(232, 94, 94);
+    background-color:  var(--color-primary);
     font-size: 1rem;
     height: 9px;
-    color: aliceblue;
+    color: var(--color-secundary);
     box-sizing: border-box;
     margin: 0;
 }
@@ -93,7 +97,7 @@ article:hover img:last-child{
     height: 100vh;
 }
 .h1-select{
-    color: white;
+    color: var(--color-secundary);
     text-align: center;
 }
 
@@ -139,10 +143,10 @@ justify-content: center;
    height: 70%;
 }
 .header-login{
-    color: whitesmoke;
+    color: var(--color-secundary);
 }
 .text-login{
-    color:white;
+    color:var(--color-secundary);
     display: flex;
     flex-direction: column;
    justify-content: space-evenly;
@@ -173,7 +177,8 @@ align-items: center;
 ---------------------------NAV-BAR -----------------------------
 ------------------------------------------------------------ */
 .navbar{
-    background-color:  rgb(232, 94, 94);
+    /* background-color:  rgb(232, 94, 94); */
+    background-color: var(--color-primary);
     
     
 }
